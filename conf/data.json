@@ -1,0 +1,71 @@
+{
+    "http": [
+        {
+            "proto":"http",
+            "offset":0,
+            "depth":0,
+            "keywords":["JexReverset", "loadClass"],
+            "keywords_count":"all of them",
+            "behavior":"VulnerabilityIntrusion",
+            "classify":"Exploits",
+            "cve_num":"CVE-2017-12149",
+            "family":"",
+            "app_info":"JBoss",
+            "description":"JBOSSAS 5.x/6.x 反序列化命令执行漏洞(CVE-2017-12149)"
+        },{
+            "proto":"http",
+            "offset":0,
+            "depth":0,
+            "keywords":["/phpinfo.php", "loadClass"],
+            "keywords_count":"all of them",
+            "behavior":"WebUrlScan",
+            "classify":"Exploits",
+            "cve_num":"CVE-2017-12149",
+            "family":"",
+            "app_info":"JBoss",
+            "description":"JBOSSAS 5.x/6.x 反序列化命令执行漏洞(CVE-2017-12149)"
+        }
+    ],
+    "tcp": [
+        {
+            "proto":"tcp",
+            "offset":0,
+            "depth":0,
+            "keywords":["POST", "/service/extdirect", "233.class.forName('java.lang.Runtime').getRuntime().exec"],
+            "keywords_count":"all of them",
+            "behavior":"VulnerabilityIntrusion",
+            "classify":"Exploits",
+            "cve_num":"CVE-2019-7238",
+            "family":"",
+            "app_info":"Nexus, Nexus Nexus Repository Manager 3.14.0",
+            "description":"Nexus Repository Manager 远程代码执行漏洞"
+        },
+        {
+            "proto":"tcp",
+            "offset":0,
+            "depth":0,
+            "keywords":["POST", "28new", "java.lang.ProcessBuilder.*.start/i"],
+            "keywords_count":"all of them",
+            "behavior":"VulnerabilityIntrusion",
+            "classify":"Exploits",
+            "cve_num":"CVE-2017-4971",
+            "family":"",
+            "app_info":"Spring, Spring Spring WebFlow 2.4.4",
+            "description":"Spring WebFlow 远程代码执行漏洞"
+        },
+        {
+            "proto":"tcp",
+            "offset":0,
+            "depth":0,
+            "keywords":["/ognl", "OgnlContext/i", "/DEFAULT_MEMBER_ACCESS/i", "/com.opensymphony.xwork2.ActionContext.container/i"],
+            "keywords_count":"all of them",
+            "behavior":"VulnerabilityIntrusion",
+            "classify":"Exploits",
+            "cve_num":"CVE-2017-4971",
+            "family":"",
+            "app_info":"Struts2, Struts2 2.3.34",
+            "description":"Struts2 S2-057 远程代码执行漏洞"
+        }
+    ],
+    "udp":[]
+}

@@ -1,0 +1,68 @@
+{
+    "policy_1":{
+        "proto":"http",
+        "offset":0,
+        "depth":0,
+        "keywords":["GET /wls-wsat/CoordinatorPortType"],
+        "keywords_count":"all of them",
+        "behavior":"VulnerabilityIntrusion",
+        "classify":"Exploits",
+        "cve_num":"CVE-2017-10271",
+        "family":"",
+        "app_info":"Weblogic",
+        "description":"Weblogic 漏洞验证"
+    },
+    "policy_2":{
+        "proto":"tcp",
+        "offset":0,
+        "depth":0,
+        "keywords":["VERSONEX","MHz","MB"],
+        "keywords_count":"all of them",
+        "behavior":"OnlineBehavior",
+        "classify":"RAT",
+        "cve_num":"",
+        "family":"Trojan[DDoS]/Linux.Dofloo",
+        "app_info":"Trojan",
+        "description":"木马上线包"
+    },
+    "policy_3":{
+        "proto":"dns",
+        "offset":0,
+        "depth":0,
+        "keywords":["post","ksosoft","com"],
+        "keywords_count":"all of them",
+        "behavior":"DNSQuery",
+        "classify":"",
+        "cve_num":"",
+        "family":"",
+        "app_info":"",
+        "description":"可疑域名解析请求"
+    },
+    "policy_4":{
+        "proto":"icmp",
+        "offset":0,
+        "depth":0,
+        "keywords":["abcdefghijk"],
+        "keywords_count":"all of them",
+        "behavior":"ICMPDataTraffic",
+        "classify":"BackDoor",
+        "cve_num":"",
+        "family":"",
+        "app_info":"",
+        "description":"可疑ICMP数据输入"
+    },
+    "policy_5":{
+        "proto":"http",
+        "offset":0,
+        "depth":0,
+        "keywords":["JexReverset", "loadClass"],
+        "keywords_count":"all of them",
+        "behavior":"VulnerabilityIntrusion",
+        "classify":"Exploits",
+        "cve_num":"CVE-2017-12149",
+        "family":"",
+        "app_info":"JBoss",
+        "description":"可疑ICMP数据输入",
+        "payload_key": ["JexReverset", "loadClass"]
+    }
+}

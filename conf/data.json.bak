@@ -1,0 +1,20 @@
+{
+    "http": [
+        {
+            "name": "JBoss 5.x/6.x RCE",
+            "payload_key": [
+                "JexReverset", "loadClass"
+            ],
+            "behavior": "RCE",
+            "classify": "Exploit",
+            "cve_num": "CVE-2017-12149",
+            "app_info": "Weblogic",
+            "family": "",
+            "description": "JBOSSAS 5.x/6.x 反序列化命令执行漏洞(CVE-2017-12149)",
+            "tools": "ReverseShellCommonsCollectionsHashMap.java",
+            "reference": "https://gitee.com/R3gr3t/JavaDeserH2HC/blob/master/ReverseShellCommonsCollectionsHashMap.java"
+        }
+    ],
+    "tcp": [],
+    "udp":[]
+}
