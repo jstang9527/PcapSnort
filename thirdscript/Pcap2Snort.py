@@ -1,8 +1,5 @@
 # -*- coding: utf-8 -*-
 '''
-author:zhuqing@antiy.cn
-reference link: https://dpkt.readthedocs.io/ (可能需要科学上网才能浏览)
-@2020.12.02
 用于从给定的策略中自动提取snort规则
 '''
 import os
